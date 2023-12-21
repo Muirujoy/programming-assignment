@@ -1,1 +1,130 @@
-https://github.com/Muirujoy/programming-assignment.git
+FUNCTIONS
+A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions. A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+PARTS OF A FUNCTION
+Return Type − A function may return a value. The return_type is the data type of the value the function returns. 
+Function Name − This is the actual name of the function. The function name and the parameter list together constitute the function signature.
+Parameters − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. 
+Function Body − The function body contains a collection of statements that define what the function does.
+
+
+FUNCTION DECLARATION
+A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.
+Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.
+Function Arguments
+If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function
+Call by reference
+This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.
+Call by value
+This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.
+
+LOOPS
+A loop statement allows us to execute a statement or group of statements multiple times. Given below is the general form of a loop statement in most of the programming languages −
+ 
+TYPES OF LOOPS
+while loop
+Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+for loop
+Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+do...while loop
+It is more like a while statement, except that it tests the condition at the end of the loop body.
+nested loops
+You can use one or more loops inside any other while, for, or do..while loop.
+
+LOOP STATEMENTS
+
+break statement
+Terminates the loop or switch statement and transfers execution to the statement immediately following the loop or switch
+
+GOTO statement
+Transfers control to the labeled statement..
+continue statement
+Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+
+ARRAYS
+
+Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+
+
+CONCEPTS IN ARRAY
+Multi-dimensional arrays
+C supports multidimensional arrays. The simplest form of the multidimensional array is the two-dimensional array.
+Passing arrays to functions
+You can pass to the function a pointer to an array by specifying the array's name without an index
+Return array from a function
+C allows a function to return an array
+Pointer to an array
+You can generate a pointer to the first element of an array by simply specifying the array name, without any index.
+
+STRUCTURES
+
+structure is another user defined data type available in C that allows to combine data items of different kinds.
+To define a structure, you must use the struct statement. The struct statement defines a new data type, with more than one member.
+Accessing Structure Members
+To access any member of a structure, we use the member access operator (.). The member access operator is coded as a period between the structure variable name and the structure member that we wish to access. You would use the keyword struct to define variables of structure type
+APPLICATIONS OF LOOP,ARRAYS,STRUCTURES AND UNIONS
+Uses: Loops are needed for all those tasks that are repetitive. They come handy while iterating through the arrays, data processing, and execution of particular instructions more than a single time.
+Applications:
+For Loops: Ideal if there is a definite number of iterations required.
+While Loops: Useful in case, in the first place, it is not known how many times a particular snippet of code will be required to be executed.
+Do-While Loops: Same as while loop, but at least it executes the loop once.
+
+Arrays:
+
+Use: Arrays are used to store and manipulate a collection of similar data type elements.
+
+Applications:
+Storing Data: Storing a list of items (e.g., names, numbers).
+Traversal: To access and process each element of the given array.
+Sorting and Searching: Implementing sorting and searching algorithms like binary search and bubble sort, respectively.
+Matrices: Representing and manipulating 2D data structures.
+
+Structures:
+
+Uses: It is used in a condition when we have to use the same group of different data types like int, char, float under one name.
+
+Applications:
+Data Organization: A single name can store different types of data together.
+Passing Complex Data: A group of data is passed as one item so that the whole unit is acted upon in a unitary way.
+File Handling: Data read or written in files can be structured, and C provides some basic format capabilities.
+
+Unions:
+
+Uses: Unions allow keeping different data types in the same memory location.
+
+Applications:
+Memory Optimization: In a scenario where there is a need to save space by using the same memory for differing type of data.
+Single Access: Useful where at one time only one member of the union is relevant.
+Hardware Interaction: Used in interfacing with hardware where the different types of data share same memory location.
+
+PROBLEMS A C PROGRAMMER IS LIKELY TO ENCOUTER
+
+Memory Leaks: Forgetting to free allocated memory can lead to leaks, and over time, your program might devour all available memory.
+
+Null Pointers: Accidentally dereferencing a null pointer is a surefire way to crash your program. Always check for null before you play with pointers.
+
+Uninitialized Variables: Using a variable before giving it a proper value can result in unpredictable behavior. Always initialize your variables!
+
+Buffer Overflows: Writing more data into an array than it can handle is a recipe for disaster. This can lead to overwritten memory and unexpected results.
+
+Undefined Behavior: Some constructs in C can lead to undefined behavior, where anything can happen. Avoid it like the plague.
+
+Poor Error Handling: Neglecting to check the return values of functions can make it difficult to diagnose issues in your code. Always handle errors gracefully.
+
+Platform Dependencies: Code that works perfectly on one system might break on another due to platform-specific differences. Be mindful of portability.
+
+Inefficient Algorithms: Choosing the wrong algorithm or data structure can result in poor performance. Always analyze and optimize your code.
+
+Inadequate Testing: Insufficient testing can leave bugs undetected. Thoroughly test your code under various conditions to catch those sneaky bugs.
+
+Pointer Arithmetic Pitfalls: Misusing pointer arithmetic can lead to hard-to-find bugs. Double-check your pointer math to avoid headaches.
+
+
+
+
+
+
+
+	
+	
+
+
